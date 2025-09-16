@@ -1,9 +1,9 @@
 ## Introduction
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Computer Science & Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> OOPS with Programming Lab
+<b> Experiment|     <b> Operators in Java 
 
 ### About the Experiment 
 
@@ -19,5 +19,5 @@ Fill a brief description of this experiment here
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
+1 | Dev Agnihotri | Student | Computer Science and Engineering | Ambalika Institute of Management and Technology, Lucknow | dev.agnihotri0724@gmail.com 
 2 | . | . | . | . | .
