@@ -1,1 +1,1 @@
-### Link your theory in here
+Link your theory in here
