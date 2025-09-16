@@ -1,0 +1,59 @@
+# This workflow is named "Deploy Main Branch"
+name: Deploy Main Branch
+
+# This workflow gets triggered when there's a push to the "main" branch of the repository
+on:
+  push:
+    branches: 
+      - main
+
+# The workflow consists of a single job named "build"
+jobs:
+  build:
+    # The job will run on a latest Ubuntu runner provided by GitHub
+    runs-on: ubuntu-latest
+    steps:
+    # The "actions/checkout@v2" action checks out the repository's code onto the runner
+    - uses: actions/checkout@v2
+
+    # Set up Node.js environment with version 16
+    - name: Setup node
+      uses: actions/setup-node@v2
+      with:
+            node-version: '16'
+            check-latest: true
+
+    # This run step does the following:
+    # - Clones the "virtual-labs/ph3-lab-mgmt" repository (with a depth of 1, to reduce size and time)
+    # - Changes the current directory to "ph3-lab-mgmt"
+    # - Installs the Node.js dependencies using "npm install"
+    # - Builds the experiment with "npm run build-exp"
+    # - Changes back to the original directory
+    # - Configures git user email and name
+    # - Checks out an orphan "gh-pages" branch (i.e., a branch with no commit history)
+    # - Resets the Git state to remove any uncommitted changes
+    # - Adds the files in the "build" directory to the Git index
+    # - Moves all files from the "build" directory to the root directory
+    # - Commits the changes with a message that includes a link to the GitHub Pages site
+    - run: |
+        git clone --depth=1 https://github.com/virtual-labs/ph3-lab-mgmt
+        cd ph3-lab-mgmt
+        npm install
+        npm run build-exp
+        cd ../
+        git config --local user.email "admin@vlabs.ac.in"
+        git config --local user.name "vleadadmin"
+        git checkout --orphan gh-pages
+        git reset
+        git add build/* -f
+        git mv build/* ./ -f
+        git commit -m "https://virtual-labs-cms.github.io/${{ github.repository }} click on the link to test your code."
+
+    # This uses the "ad-m/github-push-action@master" action to push the changes to the "gh-pages" branch
+    # This uses the "ORG_OWNER_GITHUB_TOKEN" secret as the GitHub token
+    # The "force" option is set to true, which means that the push will overwrite any existing content in the "gh-pages" branch
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
+        force: true
+        branch: gh-pages
