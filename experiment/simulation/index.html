@@ -1,13 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <title>Arithmetic Operator Simulator</title>
+  <link rel="stylesheet" href="simulation.css">
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .bug-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff6600;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .bug-button::before {
+      content: "🐞";
+      font-size: 22px;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      max-width: 400px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 1000;
+      padding: 16px;
+    }
+
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .popup-header h2 {
+      font-size: 20px;
+      align="center";
+      margin-top: 18px;
+      color: #4a90e2;
+    }
+
+    .close-btn {
+      cursor: pointer;
+      font-size: 20px;
+      border: none;
+      background: none;
+    }
+
+    .popup img {
+      width: 45px;
+      margin: 10px;
+      display: block;
+    }
+
+    .form-section {
+      margin-top: 10px;
+    }
+
+    .form-section label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-section input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    textarea, input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .close-btn-form {
+      background-color: #ccc;
+    }
+  </style>
 </head>
 <body>
-		<!-- Your code goes here-->
+  <div class="header">Analysis of Operators</div>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+  <div class="main-container">
+    <div class="panel problem-panel">
+      <div class="panel-header">Problem?</div>
+      <div class="panel-body">
+        <select id="operation">
+          <option>--Select Operation--</option>
+          <option value="add">Addition</option>
+          <option value="subtract">Subtraction</option>
+          <option value="multiply">Multiplication</option>
+          <option value="divide">Division</option>
+          <option value="modulo">Modulo</option>
+          <option value="et">Equal to</option>
+          <option value="ne">Not equal to</option>
+          <option value="gt">Greater than</option>
+          <option value="lt">Less than</option>
+          <option value="gtoe">Greater than or equal to</option>
+          <option value="ltoe">Less than or equal to</option>
+          <option value="sa">Simple assignment</option>
+          <option value="addassign">Add and assign</option>
+          <option value="subassign">Subtract and assign</option>
+          <option value="multassign">Multiply and assign</option>
+          <option value="divassign">Divde and assign</option>
+          <option value="moduloassign">Modulo and assign</option>
+          <option value="bitand">Bitwise AND</option>
+          <option value="bitor">Bitwise OR</option>
+          <option value="bitxor">Bitwise XOR</option>
+          <option value="bitnot">Bitwise NOT</option>
+          <option value="t_op">Ternary Operator</option>
+      
+        <input type="number" id="num1" placeholder="Enter the First Number">
+        <input type="number" id="num2" placeholder="Enter the Second Number">
+        <div class="button-row">
+          <button class="start" onclick="start()">Start</button>
+          <button class="next" onclick="nextStep()">Next</button>
+          <button class="reset" onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel step-panel">
+      <div class="panel-header">Step Execute</div>
+      <div class="panel-body" id="steps"></div>
+    </div>
+
+    <div class="panel result-panel">
+      <div class="panel-header">Result</div>
+      <div class="panel-body" id="result"><strong>Output : </strong></div>
+    </div>
+  </div>
+
+  <script src="ssc.js"></script>
+  </body>
 </html>
