@@ -1,39 +1,281 @@
 {
   "version": 2.0,
   "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "id": 1,
+        "question": "Which operator is used to compare two values?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "=",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "==",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "===",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": ":=",
+            "value": "d"
+          }
+        ]
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": 2,
+        "question": "What is the result of true && false?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "true",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "false",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "0",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "error",
+            "value": "d"
+          }
+        ]
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "id": 3,
+        "question": "What does the expression a += 3 mean?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "a = a + 3",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "a = a - 3",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "a = 3",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "a = a * 3",
+            "value": "d"
+          }
+        ]
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": 4,
+        "question": "Which is a logical OR operator in Java?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "&",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "&&",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "||",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "|",
+            "value": "d"
+          }
+        ]
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "id": 5,
+        "question": "Which operator is used for conditional expressions?",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "if",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "?:",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "switch",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "None",
+            "value": "d"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "What is the output of the following code?",
+        "code": "int a = 5;\nint b = 2;\nSystem.out.println(a % b);",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "2",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "1",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "3",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "0",
+            "value": "d"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What is the output?",
+        "code": "int x = 3;\nSystem.out.println(++x * 2);",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "6",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "7",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "8",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "9",
+            "value": "d"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "What is printed by this code?",
+        "code": "int x = 5, y = 10;\nSystem.out.println((x > y) || (x < y));",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "true",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "false",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "0",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "1",
+            "value": "d"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Find the output:",
+        "code": "int a = 4, b = 3;\nSystem.out.println(a & b);",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "0",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "1",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "2",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "4",
+            "value": "d"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "What is the output of this code?",
+        "code": "int x = 5;\nx *= 2 + 3;\nSystem.out.println(x);",
+        "type": "multiple-choice",
+        "options": [
+          {
+            "label": "a",
+            "text": "25",
+            "value": "a"
+          },
+          {
+            "label": "b",
+            "text": "10",
+            "value": "b"
+          },
+          {
+            "label": "c",
+            "text": "15",
+            "value": "c"
+          },
+          {
+            "label": "d",
+            "text": "30",
+            "value": "d"
+          }
+        ]
+      }
+    ]
+  },
+  
