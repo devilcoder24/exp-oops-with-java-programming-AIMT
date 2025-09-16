@@ -8,4 +8,4 @@ EMPTY
 ### Developers
 | SNo. | Name | Email | Institute | ID |
 | :---: | :---: | :---: | :---: | :---: |
-| 1 | name | email | institute | id |
+| 1 | Dev Agnihotri | dev.agnihotri0724@gmail.com | Ambalika Institute of Management and Technology, Lucknow | 3630011528 |
