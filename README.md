@@ -7,13 +7,13 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+In this experiment the Student will be able to understand about various types of Operators used in Java Programming Language with the help of a iterative simulator.
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dev Agnihotri
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Ambalika Institute of Management and Technology | <b>  
+<b> dev.agnihotri0724@gmail.com |     <b>  
+<b> Computer Science and Engineering |  
 
 ### Contributors List
 
