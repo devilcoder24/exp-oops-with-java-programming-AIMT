@@ -1,10 +1,11 @@
 {
-  "version": 2.0,
+  "version": 2.0
   "questions": [
       {
         "id": 1,
         "question": "Which operator is used to compare two values?",
         "type": "multiple-choice",
+        "correct_answer": "b",
         "options": [
           {
             "label": "a",
@@ -32,6 +33,7 @@
         "id": 2,
         "question": "What is the result of true && false?",
         "type": "multiple-choice",
+        "correct_answer": "b",
         "options": [
           {
             "label": "a",
@@ -59,6 +61,7 @@
         "id": 3,
         "question": "What does the expression a += 3 mean?",
         "type": "multiple-choice",
+        "correct_answer": "a",
         "options": [
           {
             "label": "a",
@@ -86,6 +89,7 @@
         "id": 4,
         "question": "Which is a logical OR operator in Java?",
         "type": "multiple-choice",
+        "correct_answer": "c",
         "options": [
           {
             "label": "a",
@@ -113,6 +117,7 @@
         "id": 5,
         "question": "Which operator is used for conditional expressions?",
         "type": "multiple-choice",
+        "correct_answer": "b",
         "options": [
           {
             "label": "a",
@@ -141,6 +146,7 @@
         "question": "What is the output of the following code?",
         "code": "int a = 5;\nint b = 2;\nSystem.out.println(a % b);",
         "type": "multiple-choice",
+        "correct_answer": "b",
         "options": [
           {
             "label": "a",
@@ -169,6 +175,7 @@
         "question": "What is the output?",
         "code": "int x = 3;\nSystem.out.println(++x * 2);",
         "type": "multiple-choice",
+        "correct_answer": "c",
         "options": [
           {
             "label": "a",
@@ -197,6 +204,7 @@
         "question": "What is printed by this code?",
         "code": "int x = 5, y = 10;\nSystem.out.println((x > y) || (x < y));",
         "type": "multiple-choice",
+        "correct_answer": "a",
         "options": [
           {
             "label": "a",
@@ -225,6 +233,7 @@
         "question": "Find the output:",
         "code": "int a = 4, b = 3;\nSystem.out.println(a & b);",
         "type": "multiple-choice",
+        "correct_answer": "a",
         "options": [
           {
             "label": "a",
@@ -253,6 +262,7 @@
         "question": "What is the output of this code?",
         "code": "int x = 5;\nx *= 2 + 3;\nSystem.out.println(x);",
         "type": "multiple-choice",
+        "correct_answer": "a",
         "options": [
           {
             "label": "a",
@@ -278,4 +288,32 @@
       }
     ]
   },
-  
+  "quiz_logic": {
+    "scoring": {
+      "total_questions": 10,
+      "passing_score": 60,
+      "scoring_method": "percentage"
+    },
+    "validation": {
+      "require_all_answers": true,
+      "show_correct_answers": true,
+      "show_score": true
+    },
+    "feedback": {
+      "correct_color": "green",
+      "incorrect_color": "red",
+      "result_display": "score_out_of_total"
+    }
+  },
+  "answer_key": {
+    "q1": "b",
+    "q2": "b", 
+    "q3": "a",
+    "q4": "c",
+    "q5": "b",
+    "q6": "b",
+    "q7": "c",
+    "q8": "a",
+    "q9": "a",
+    "q10": "a"
+  },
