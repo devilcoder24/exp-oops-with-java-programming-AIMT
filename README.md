@@ -11,9 +11,9 @@ In this experiment the Student will be able to understand about various types of
 
 <b>Name of Developer | <b> Dev Agnihotri
 :--|:--|
-<b> Ambalika Institute of Management and Technology | <b>  
-<b> dev.agnihotri0724@gmail.com |     <b>  
-<b> Computer Science and Engineering |  
+<b> Institute | <b>  Ambalika Institute of Management and Technology 
+<b> Email id |   dev.agnihotri0724@gmail.com  <b>  
+<b> Department |  Computer Science and Engineering 
 
 ### Contributors List
 
