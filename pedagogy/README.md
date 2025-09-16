@@ -5,13 +5,13 @@
 
 
 <br>
-<b> Experiment : Name of the experiment	 <a name="top"></a> <br>
+<b> Experiment : To study about the various types of Operators used in Java	 <a name="top"></a> <br>
 </p>
 
-<b>Discipline | Fill your discipline name here <b> 
+<b>Discipline | Computer Science and Engineering <b> 
 :--|:--|
-<b> Lab | Fill your lab name here<b> 
-<b> Experiment|  Fill your experiment name here   <b> 
+<b> Lab | OOPS with Java Programming <b> 
+<b> Experiment|  Operators in Java <b> 
 
 
 <h4> [1. Focus Area](#LO)
@@ -22,7 +22,7 @@
 <hr>
 
 <a name="LO"></a>
-#### 1. Focus Area : Reinforce theoretical concept.
+#### 1. Focus Area : Experimentation.
 
 #### 2. Learning Objectives and Cognitive Level
 
