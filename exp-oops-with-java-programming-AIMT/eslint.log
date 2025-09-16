@@ -1,0 +1,11 @@
+
+/home/runner/work/exp-oops-with-java-programming-AIMT/exp-oops-with-java-programming-AIMT/experiment/simulation/js/main.js
+    4:5   warning  'resultValue' is assigned a value but never used  no-unused-vars
+   11:10  warning  'start' is defined but never used                 no-unused-vars
+   32:7   warning  'mess' is assigned a value but never used         no-unused-vars
+  373:10  warning  'nextStep' is defined but never used              no-unused-vars
+  384:9   warning  'lastStep' is assigned a value but never used     no-unused-vars
+  628:10  warning  'reset' is defined but never used                 no-unused-vars
+
+✖ 6 problems (0 errors, 6 warnings)
+
